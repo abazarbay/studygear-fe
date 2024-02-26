@@ -4,8 +4,8 @@
     <ProgrammsList :programms="cartItems" 
     v-on:remove-from-cart="removeFromCart($event)"
     />
-   <h3 id="total-price">Total: €{{ totalPrice }}</h3>
-   <button id="checkout-button">Proceed to Checkout</button>
+   <!-- <h3 id="total-price">Total: €{{ totalPrice }}</h3> -->
+   <button id="checkout-button">Contact us</button>
     </div>
 </template>
 
@@ -23,14 +23,14 @@ export default {
             cartItems: [],
         }
     },
-    computed: {
-        totalPrice() {
-            return this.cartItems.reduce(
-                (sum, item) => sum + Number(item.price),
-                0,
-            );
-        }
-    },
+    // computed: {
+    //     totalPrice() {
+    //         return this.cartItems.reduce(
+    //             (sum, item) => sum + Number(item.price),
+    //             0,
+    //         );
+    //     }
+    // },
     methods: {
         async removeFromCart(programmId) {
             const result = await axios.delete(`/api/users/12345/cart/${programmId}`);
