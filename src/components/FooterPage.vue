@@ -6,6 +6,7 @@
             <li><a href="/home">Home</a></li>
             <li><a href="/about">Über uns</a></li>
             <li><a href="/contact">Kontakt</a></li>
+            <li><a href="/impressum">Impressum</a></li>
             <!-- Fügen Sie weitere Links hinzu -->
           </ul>
         </div>

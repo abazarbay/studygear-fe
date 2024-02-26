@@ -25,7 +25,7 @@
         formData: {
           username: '',
           email: '',
-          message: ''
+          message: '',
         }
       };
     },
